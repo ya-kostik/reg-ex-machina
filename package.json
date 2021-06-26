@@ -1,0 +1,29 @@
+{
+  "name": "reg-ex-machina",
+  "version": "0.1.0",
+  "description": "Regular expressions with timeout. Based on VM",
+  "main": "index.js",
+  "repository": "git@github.com:ya-kostik/reg-ex-machina.git",
+  "author": "Constantin Tsukanov <c@indotech.ru>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./",
+    "tarball": "tarball=\"$(npm pack .)\"; wc -c \"${tarball}\"; tar tvf \"${tarball}\"; rm \"${tarball}\";"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "keywords": [
+    "regexp",
+    "evil",
+    "safe regexp",
+    "evil regexp"
+  ],
+  "private": false,
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "jest": "^27.0.5"
+  }
+}
